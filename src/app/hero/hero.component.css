@@ -1,0 +1,15 @@
+.hero {
+    margin: 0;
+    background-image: url('/assets/bg.png');
+    color: #fff;
+    padding: 64px;
+    font-size: 24px;
+}
+
+.hero h2 {
+    margin: 0;
+}
+
+.hero p {
+    max-width: 50%;
+}

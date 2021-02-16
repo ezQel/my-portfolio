@@ -1,0 +1,19 @@
+.projects {
+    margin: 0 64px;
+}
+
+h2 {
+    color: #333;
+    margin-left: 8px;
+}
+
+.project-cell {
+    display: inline-block;
+    width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .project-cell {
+        width: unset;
+    }
+}

@@ -1,15 +1,55 @@
 .hero {
+    position: relative;
     margin: 0;
     background-image: url('/assets/bg.png');
+    /* background-attachment: fixed; */
     color: #fff;
     padding: 64px;
     font-size: 24px;
 }
 
-.hero h2 {
+.hero h1 {
     margin: 0;
 }
 
 .hero p {
     max-width: 50%;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-weight: 700;
+    font-size: large;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: #dfdfdf;
+}
+
+.contact-info {
+    position: absolute;
+    bottom: 16px;
+    right: 64px;
+    font-size: 16px;
+}
+
+.contact-info a {
+    margin-right: 16px;
+}
+
+.contact-info a:hover svg {
+    fill: #bbbbbb;
+}
+
+.contact-info svg {
+    fill: #ffffff;
 }

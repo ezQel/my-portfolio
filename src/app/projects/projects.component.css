@@ -3,17 +3,47 @@
 }
 
 h2 {
-    color: #333;
+    color: #1e83ff;
     margin-left: 8px;
 }
 
 .project-cell {
     display: inline-block;
-    width: 50%;
+    width: 25%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .project-cell {
-        width: unset;
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .projects {
+        margin: 0 32px;
+    }
+
+    .project-cell {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .projects {
+        margin: 0 16px;
+    }
+
+    .project-cell {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .projects {
+        margin: 0 8px;
+    }
+
+    .project-cell {
+        width: 100%;
     }
 }

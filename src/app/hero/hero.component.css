@@ -2,10 +2,9 @@
     position: relative;
     margin: 0;
     background-image: url('/assets/bg.png');
-    /* background-attachment: fixed; */
     color: #fff;
     padding: 64px;
-    font-size: 24px;
+    font-size: large;
 }
 
 .hero h1 {
@@ -39,7 +38,6 @@ button:hover {
     position: absolute;
     bottom: 16px;
     right: 64px;
-    font-size: 16px;
 }
 
 .contact-info a {
@@ -52,4 +50,41 @@ button:hover {
 
 .contact-info svg {
     fill: #ffffff;
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        padding: 64px 16px;
+        font-size: unset;
+    }
+
+    .hero p {
+        max-width: unset;
+    }
+    
+    .contact-info {
+        bottom: 8px;
+        left: 16px;
+        right: unset;
+    }
+
+    .contact-info svg {
+        width: 1em;
+        height: 1em;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .hero {
+        padding: 64px 32px;
+    }
+    
+    .contact-info {
+        bottom: 8px;
+        left: 32px;
+        right: unset;
+    }
 }

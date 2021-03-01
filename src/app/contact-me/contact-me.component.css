@@ -1,6 +1,10 @@
-.contact {
+:host {
+    display: block;
     background-color: #111111;
     margin-top: 32px;
+}
+
+.contact {
     padding: 16px 64px;
     color: #ffffff;
 }
@@ -23,7 +27,7 @@ button {
 }
 
 svg {
-    fill: #ffffff;
+    fill: #f2f2f2;
     margin-bottom: 8px;
 }
 
@@ -33,21 +37,37 @@ a {
 }
 
 a:hover {
-    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 2px 0 #dddddd62;
 }
 
 .contact-card {
-    display: inline-block;
+    display: block;
     padding: 16px;
     text-align: center;
-    margin-right: 32px;
-    box-shadow: 0 0 1px 0 rgba(255, 255, 255, 0.5);
+    margin-right: 16px;
+    margin-bottom: 8px;
     border-radius: 6px;
     font-size: 0.725em;
+    min-width: 124px;
+}
+
+.card-container {
+    display: inline-block;
 }
 
 .copy {
     margin-top: 32px;
     color: #aaaaaa;
     font-size: 0.8em;
+}
+
+@media screen and (max-width: 600px) {
+    .contact {
+        padding: 8px;
+    }
+
+    .card-container {
+        width: 50%;
+    }
+
 }
